@@ -13,7 +13,7 @@ try {
     $postCount = 0;
     foreach ($postsData as $post) {
         $insertPostStmt->execute([
-            ':id' => $post['id'], 
+            ':id' => $post['id'],
             ':user_id' => $post['userId'],
             ':title' => $post['title'],
             ':body' => $post['body']
